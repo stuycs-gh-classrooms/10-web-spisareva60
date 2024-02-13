@@ -1,1 +1,38 @@
+body {
+    background-color: #f2f2f2;
+    color: #333;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #008080;
+}
+
+p {
+    font-size: 16px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: #0066cc;
+}
+
+
+img {
+    width: 300px;
+    height: auto;
+    border: 2px solid #008080;
+}
+
+ol {
+    font-weight: bold;
+}
+
+ol li {
+    color: #ff6347;
+}
 
