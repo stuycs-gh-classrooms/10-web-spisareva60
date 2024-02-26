@@ -15,6 +15,7 @@ p {
 img {
     width: 50%;
     float: right;
+    margin-left: 20px;
 }
 
 header, nav, main, footer {
