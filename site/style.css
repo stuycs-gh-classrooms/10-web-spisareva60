@@ -2,20 +2,21 @@ body {
     font-family: 'Garamond', serif;
     margin: 0;
     padding: 0;
-    background-color: #green; 
+    background-color: #green;
     color: #b3ffff; 
 }
 
+.container {
+    display: flex; /* Use flexbox for the container */
+}
+
 p {
-    width: 50%;
-    float: left;
+    flex: 1; /* Make the paragraph flexible, taking up available space */
     margin-right: 20px;
 }
 
 img {
-    width: 50%;
-    float: right;
-    margin-left: 20px;
+    flex: 1; /* Make the image flexible, taking up available space */
 }
 
 header, nav, main, footer {
@@ -59,4 +60,3 @@ main {
 section {
     max-width: 800px;
 }
-
