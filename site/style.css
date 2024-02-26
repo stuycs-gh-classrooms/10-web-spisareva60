@@ -2,8 +2,6 @@ body {
     font-family: 'Garamond', serif;
     margin: 0;
     padding: 0;
-    background-color: #caebb
-    color: #b3ffff; 
 }
 
 header, nav, main {
@@ -11,7 +9,7 @@ header, nav, main {
 }
 
 header {
-    background-color: #333;
+    background-color: #caebb;
     color: white;
     text-align: center;
 }
