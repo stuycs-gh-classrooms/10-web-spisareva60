@@ -6,6 +6,17 @@ body {
     color: #b3ffff; 
 }
 
+p {
+      width: 50%;
+      float: left;
+      margin-right: 20px;
+    }
+
+    img {
+      width: 50%;
+      float: right;
+    }
+
 header, nav, main, footer {
     padding: 15px;
 }
