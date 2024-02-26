@@ -2,14 +2,16 @@ body {
     font-family: 'Garamond', serif;
     margin: 0;
     padding: 0;
+    background-color: #000000
+    color: #b3ffff; 
 }
 
-header, nav, main {
-    padding: 30px;
+header, nav, main, footer {
+    padding: 15px;
 }
 
 header {
-    background-color: #caebb;
+    background-color: #333;
     color: white;
     text-align: center;
 }
@@ -45,6 +47,3 @@ main {
 section {
     max-width: 800px;
 }
-
-
-
