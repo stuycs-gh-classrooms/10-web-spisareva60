@@ -54,6 +54,13 @@ li {
   overflow: hidden;
 }
 
+.box2 {
+  display: flow-root;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  overflow: hidden;
+}
+
 .box-image {
   float: left;
   max-width: 50%;
