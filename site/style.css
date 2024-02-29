@@ -6,7 +6,7 @@ html {
 body {
   width: 90%;
   margin: auto;
-  background-color: lavender;
+  background-color: #C7FCEB;
   border-radius: 20px;
 }
 
@@ -40,7 +40,6 @@ ul {
 li {
   display: inline;
   padding: 5px;
-  border-bottom: thick solid purple;
 }
 
 .landing {
