@@ -56,11 +56,25 @@ li {
 
 .box-image {
   float: left;
-  max-width: 40%;
+  max-width: 50%;
   margin-left: 1.5em;
 }
 
 .box-text {
+  text-align: end;
+  font-size: 30px;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  font-family: "Times New Roman", serif;
+}
+
+.box-image2 {
+  float: left;
+  max-width: 50%;
+  margin-left: 1.5em;
+}
+
+.box-text2 {
   text-align: end;
   font-size: 30px;
   margin-left: 1.5em;
