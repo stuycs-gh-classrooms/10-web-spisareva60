@@ -1,12 +1,12 @@
 html {
   font-size: 20px;
-  background-color: #C7FCEB;
+  background-color: #92FEDB;
 }
 
 body {
   width: 90%;
   margin: auto;
-  background-color: #92FEDB;
+  background-color: #C7FCEB;
   border-radius: 40px;
 }
 
@@ -62,8 +62,8 @@ li {
 
 .box-image {
   float: left;
-  max-width: 60%;
-  max-height: 60%;
+  max-width: 30%;
+  max-height: 30%;
   margin-left: 1.5em;
 }
 
@@ -77,8 +77,8 @@ li {
 
 .box-image2 {
   float: left;
-max-width: 60%;
-max-height: 60%;
+max-width: 30%;
+max-height: 30%;
   margin-left: 1.5em;
 }
 
