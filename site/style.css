@@ -6,8 +6,12 @@ html {
 body {
   width: 90%;
   margin: auto;
-  background-color: #C7FCEB;
-  border-radius: 20px;
+  background-color: #92FEDB;
+  border-radius: 40px;
+}
+
+img {
+  border: 2px solid #92FEDB
 }
 
 nav {
@@ -42,11 +46,6 @@ li {
   padding: 5px;
 }
 
-.landing {
-  background-color: lavender;
-  border: 4px dashed purple;
-}
-
 .box {
   display: flow-root;
   border-bottom-left-radius: inherit;
@@ -63,7 +62,8 @@ li {
 
 .box-image {
   float: left;
-  max-width: 50%;
+  max-width: 60%;
+  max-height: 60%;
   margin-left: 1.5em;
 }
 
@@ -72,12 +72,13 @@ li {
   font-size: 30px;
   margin-left: 1.5em;
   margin-right: 1.5em;
-  font-family: "Times New Roman", serif;
+  font-family: "Garamond", serif;
 }
 
 .box-image2 {
   float: left;
-  max-width: 50%;
+max-width: 60%;
+max-height: 60%;
   margin-left: 1.5em;
 }
 
@@ -86,7 +87,7 @@ li {
   font-size: 30px;
   margin-left: 1.5em;
   margin-right: 1.5em;
-  font-family: "Times New Roman", serif;
+  font-family: "Garamond", serif;
 }
 
 h1 {
