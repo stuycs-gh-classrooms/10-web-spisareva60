@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Fractal Fun!</title>
+    <link href="fractals.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="box">
+      <h1>The Koch Curve</h1>
+        <p class="box-text">
+          Basic curve: <br>
+          <pre><code>
+            koch_curve(t, 4, 20)
+          </code></pre><br>
+        </p class="box-text">
+        <img class="box-image" src="images/koch1.png">
+        <p class="box-text">
+          This curve has several modifications:<br>
+          1. The line color has been changed to pink <br>
+          2. The lines have been made thicker <br>
+          3. The length of each line has been randomized <br>
+          <pre><code>
+            koch_curve(t, 4, 20)
+          </code></pre><br>
+        </p class="box-text">
+        <img class="box-image" src="images/koch2.png">
+        <pre><code>
+        def koch_curve(t, depth, size):
+    if (depth == 1):
+        t.pencolor("pink")
+        t.pensize(3)
+        t.fd(size)
+    else:
+        t.pencolor("pink")
+        t.pensize(3)
+        reduction = random.randrange(1, 3)
+        koch_curve(t, depth-1, size)
+        t.lt(60)
+        koch_curve(t, depth-1, size * reduction)
+        t.rt(120)
+        koch_curve(t, depth-1, size * reduction)
+        t.lt(60)
+        koch_curve(t, depth-1, size * reduction)
+        </code></pre>
+      </div class="box">
+      <div class="box">
+        <h1>The Sierpinski Triangle</h1>
+          <p class="box-text">
+            Basic triangle: <br>
+            <pre><code>
+              sierpinski(t, 5, 200)
+            </code></pre><br>
+          </p class="box-text">
+          <img class="box-image" src="images/ser1.png">
+          <p class="box-text">
+            This triangle has several modifications:<br>
+            1. The width of each line has been randomized<br>
+            2. The base case is drawn in pink, and the rest of the triangle is drawn in purple <br>
+            <pre><code>
+              sierpinski(t, 5, 200)
+            </code></pre><br>
+          </p class="box-text">
+          <img class="box-image" src="images/ser2.png">
+          <pre><code>
+         def sierpinski(t, depth, size):
+    if depth == 1:
+        t.width(random.randrange (1, 5))
+        t.color("pink")
+        t.lt(60)
+        t.fd(size)
+        t.rt(120)
+        t.fd(size)
+        t.rt(120)
+        t.fd(size)
+        t.rt(180)
+        t.color("purple")
+    else:
+        sierpinski(t, depth-1, size/2)
+        t.fd(size/2)
+        sierpinski(t, depth-1, size/2)
+        t.bk(size/2)
+        t.lt(60)
+        t.fd(size/2)
+        t.rt(60)
+        sierpinski(t, depth-1, size/2)
+        t.rt(120)
+        t.fd(size/2)
+        t.lt(120)
+          </code></pre>
+        </div class="box">
+        <div class="box">
+          <h1>Trees</h1>
+            <p class="box-text">
+              Basic tree: <br>
+              <pre><code>
+                tree(t, 4, 50, 20)
+              </code></pre><br>
+            </p class="box-text">
+            <img class="box-image" src="images/tree1.png">
+            <p class="box-text">
+            This tree has several modifications:<br>
+              1. Each branch gets smaller in length<br>
+              2. Each branch gets smaller in width<br>
+              3. The angles are randomized<br>
+              3. The bottom branch is blue, the middle branches are purple, and the top branches are pink<br>
+              <pre><code>
+                tree(t, 9, 70, 15)
+              </code></pre><br>
+            </p class="box-text">
+            <img class="box-image" src="images/tree2.png">
+            <pre><code>
+            def tree(t, depth, size, angle):
+    if depth == 0:
+        t.fd(size)
+        t.pencolor("pink")
+        t.bk(size)
+        t.pencolor("purple")
+    else:
+        t.pencolor("blue")
+        t.pensize(depth)
+        t.fd(size)
+        t.rt(angle)
+        t.pensize(depth)
+        tree(t, depth-1, size * 0.8, angle + random.randrange(-20,20))
+        t.lt(2 * angle)
+        t.pensize(depth)
+        tree(t, depth-1, size * 0.8, angle + random.randrange(-10,10))
+        t.rt(angle)
+        t.bk(size)
+            </code></pre>
+          </div class="box">
+  </body>
+
+</html>
