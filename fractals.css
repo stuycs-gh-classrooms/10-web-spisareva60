@@ -1,0 +1,32 @@
+html {
+  font-size: 20px;
+  background-color: seashell;
+}
+
+body {
+  width: 90%;
+  margin: auto;
+  background-color: thistle;
+  border-radius: 15px;
+}
+
+.box-image {
+  float: bottom;
+  max-width: 50%;
+  margin-left: 1.5em;
+}
+
+.box-text {
+  text-align: start;
+  font-size: 20px;
+  margin-left: .75em;
+  margin-right: .75em;
+  font-family: "Garamond", serif;
+}
+
+h1 {
+  text-align: left;
+  font-weight: bold;
+  font-size: 50px;
+
+}
